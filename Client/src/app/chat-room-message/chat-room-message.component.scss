@@ -1,0 +1,35 @@
+.user__message {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.user__message>div:nth-child(1) {
+    margin-right: 1%;
+}
+
+.user__message>div:nth-child(1)>img {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 8px;
+}
+
+
+.user__message>div:nth-child(2) {
+    width: 100%;
+}
+
+.user__message>div:nth-child(2)>img {
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.user__message>div:nth-child(2)>h5 {
+    font-weight: 800;
+}
+
+.user__message>div:nth-child(2)>p {
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

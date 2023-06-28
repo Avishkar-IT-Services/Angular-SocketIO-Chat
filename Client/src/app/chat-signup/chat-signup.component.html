@@ -1,0 +1,50 @@
+<div class="login__parent" *ngIf="!isOtp">
+    <div class="card">
+        <div class="grid">
+            <div class="col-5 flex align-items-center justify-content-center">
+                <div class="p-fluid">
+                    <div class="field">
+                        <label for="username">Name</label>
+                        <input pInputText id="username" type="text" [(ngModel)]="name"
+                            [class]="signupErr.isName ? 'ng-invalid ng-dirty' : ''"
+                            [placeholder]="signupErr.isName ? 'Enter your name' : ''" />
+                    </div>
+                    <div class="field">
+                        <label for="username">Email</label>
+                        <input pInputText id="username" type="text" [(ngModel)]="email"
+                            [class]="signupErr.isEmail ? 'ng-invalid ng-dirty' : ''"
+                            [placeholder]="signupErr.isEmail ? 'Enter your email' : ''" />
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input pInputText id="password" type="password" [(ngModel)]="password"
+                            [class]="signupErr.isPass ? 'ng-invalid ng-dirty' : ''"
+                            [placeholder]="signupErr.isPass ? 'Enter your password' : ''" />
+                    </div>
+                    <p-button label="Signup" styleClass="p-button-success" (click)="createAcoount()"></p-button>
+                    <p-toast></p-toast>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login__parent" *ngIf="isOtp">
+    <div class="card">
+        <div class="grid">
+            <div class="col-5 flex align-items-center justify-content-center">
+                <div class="p-fluid">
+                    <div class="field">
+                        <label for="username">OTP</label>
+                        <input pInputText id="username" type="text" [(ngModel)]="otp"
+                            [class]="otpError ? 'ng-invalid ng-dirty' : ''"
+                            [placeholder]="otpError ? 'Enter your name' : 'Please enter 4 digit otp'" />
+                    </div>
+                    <p-button label="Verify your account" styleClass="p-button-success"
+                        (click)="handleOtp()"></p-button>
+                    <p-toast></p-toast>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

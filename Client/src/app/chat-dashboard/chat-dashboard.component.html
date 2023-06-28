@@ -1,0 +1,101 @@
+<div class="chat__parent" #videoChat>
+    <div class="sidebar__channel">
+        <div class="chat__channel--list" *ngFor="let channel of channelList" (click)="handleChatDisplay(channel)">
+            <div># {{channel.name}}</div>
+        </div>
+    </div>
+
+    <div class="chat__message--display">
+        <div>
+            {{ channelName ? '#' + channelName : '#Select channel' }}
+        </div>
+        <div>
+            <div class="display__message" *ngIf="channelName">
+                <div [ngSwitch]="channelName">
+                    <div *ngSwitchCase="'Random'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="randomList"></app-chat-room-message>
+                    </div>
+                    <div *ngSwitchCase="'Science'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="scienceList"></app-chat-room-message>
+                    </div>
+                    <div *ngSwitchCase="'Technology'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="technologyList"></app-chat-room-message>
+                    </div>
+                    <div *ngSwitchCase="'Politics'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="politicsList"></app-chat-room-message>
+                    </div>
+                    <div *ngSwitchCase="'Education'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="educationList"></app-chat-room-message>
+                    </div>
+
+                    <div *ngSwitchCase="'Meme'">
+                        <div *ngIf="isLoading">
+                            <app-chat-loading></app-chat-loading>
+                        </div>
+                        <app-chat-room-message [roomMessage]="memeList"></app-chat-room-message>
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="isUserType"> {{userTyperName}} is typing ...</div>
+                </div>
+
+                <div>
+                    <div *ngIf="joinedUser"> {{joinedUser}} </div>
+                </div>
+            </div>
+
+            <div class="upload__preview--parent" *ngIf="channelName">
+                <div class="upload-btn-wrapper">
+                    <div>
+                        <button class="btn"> <i class="pi pi-cloud-upload"></i></button>
+                        <input type="file" name="myfile" (change)="onSelectFile($event)"
+                            (click)="HandleReset($event)" />
+                    </div>
+                </div>
+
+                <div class="upload__title--progress" *ngIf="uploadFileFullName">
+                    <div>
+                        {{uploadFileShortName}} ...
+                    </div>
+
+                    <div>
+                        <app-dialog [url]="url" [name]="uploadFileFullName" [format]="format"></app-dialog>
+                    </div>
+
+                    <div (click)="handleCancelUpload()">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat__input--parent" *ngIf="channelName">
+                <div class="card flex justify-content-center chat__input">
+                    <input type="text" pInputText placeholder="Type your message..." [(ngModel)]="inputValue"
+                        (keyup)="userTyping($event)" (keyup.enter)="sendMessage()" />
+                </div>
+
+                <div class="card flex justify-content-center">
+                    <p-button (click)="sendMessage()" [disabled]="isSendBtn">
+                        <i class="pi pi-send"></i>
+                    </p-button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

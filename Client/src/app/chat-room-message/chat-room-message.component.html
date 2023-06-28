@@ -1,0 +1,18 @@
+<div *ngIf="roomMessage.length===0">
+    No chat found
+</div>
+<div *ngFor="let msg of roomMessage" class="user__message">
+    <div>
+        <img src="https://static.vecteezy.com/system/resources/previews/002/002/257/original/beautiful-woman-avatar-character-icon-free-vector.jpg"
+            alt="" width="50">
+    </div>
+    <div>
+        <h5>{{msg?.name}} - <span class="sent__time">{{msg?.sentDate}}</span></h5>
+        <img [src]="msg?.upload?.url" alt="" width="60%" height="60"
+            *ngIf="msg?.upload?.url && msg?.upload?.type==='image'">
+        <video width="50%" height="80%" controls *ngIf="msg?.upload?.url && msg?.upload?.type==='video'">
+            <source [src]="msg?.upload?.url" type="video/mp4">
+        </video>
+        <p>{{msg?.messageText}}</p>
+    </div>
+</div>

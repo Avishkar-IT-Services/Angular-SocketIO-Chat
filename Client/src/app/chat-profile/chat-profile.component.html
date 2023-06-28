@@ -1,0 +1,9 @@
+<p-card header="My Profile" [style]="{ width: '360px' ,margin:'auto' }">
+    <p class="m-0">
+        Name - {{userInfo.name}}
+    </p>
+    <p class="m-0 m-5">
+        Email - {{userInfo.email}}
+    </p>
+    <p-button label="Logout" (click)="handleLogout()" [style]="{ width: '100%',marginTop:'5%' }"></p-button>
+</p-card>

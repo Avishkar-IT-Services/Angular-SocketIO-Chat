@@ -1,0 +1,169 @@
+.chat__parent {
+    height: 94vh;
+    width: 99.8vw;
+    display: flex;
+}
+
+.chat__parent>div:nth-child(1) {
+    width: 20%;
+    height: 100%;
+    background-color: #541554;
+    color: white;
+    padding: 0.5%;
+    cursor: pointer;
+
+}
+
+.chat__parent>div:nth-child(2) {
+    margin-left: 0.5%;
+    width: 90%;
+    height: 100%;
+}
+
+.chat__message--display {
+    width: 100%;
+    height: 100%;
+    // background-color: #2196f3;
+}
+
+.chat__message--display>div:nth-child(1) {
+    border-bottom: 1px solid grey;
+    padding: 0.5%;
+    font-weight: 800;
+}
+
+.chat__message--display>div:nth-child(2) {
+    // border: 1px solid red;
+    padding: 0.2%;
+    height: 93%;
+}
+
+.chat__input--button {
+    height: 10%;
+}
+
+.heading__live--chat {
+    padding: 1%;
+    background-color: #2196f3;
+    color: white;
+
+}
+
+.display__message {
+    width: 95%;
+    height: 84%;
+    padding: 1%;
+    // margin-bottom: 1%;
+    font-weight: 500;
+    border: 1px solid rgb(222, 220, 220);
+}
+
+.chat__channel--list {
+    padding: 2%;
+    display: flex;
+    color: white;
+}
+
+.chat__channel--list>div:nth-child(2) {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 3%;
+    width: 99%;
+    cursor: pointer;
+}
+
+
+.chat__input--parent {
+    display: flex;
+    width: 100%;
+}
+
+.chat__input {
+    width: 99%;
+}
+
+.chat__input>input {
+    width: 99%;
+}
+
+.display__message {
+    width: 100%;
+    height: 89%;
+    overflow-y: scroll;
+    padding: 1%;
+    font-weight: 500;
+    border: 1px solid rgb(222, 220, 220);
+}
+
+.sent__time {
+    font-weight: 200;
+}
+
+.upload-btn-wrapper {
+    padding: 0.2%;
+    height: 5vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.upload-btn-wrapper>div:nth-child(1) {
+    width: 2vw;
+}
+
+.upload__preview--parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(222, 222, 222);
+    margin-bottom: 0.4%;
+}
+
+.upload-btn-wrapper>div:nth-child(2) {
+    width: 90%;
+}
+
+
+.btn {
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.upload__title--progress {
+    display: flex;
+    width: 75vw;
+}
+
+.upload__title--progress>div:nth-child(1) {
+    margin-right: 1%;
+    width: 22%;
+    height: 100%;
+}
+
+.upload__title--progress>div:nth-child(2) {
+    margin-right: 1%;
+    width: auto;
+    height: 100%;
+}
+
+.upload__title--progress>div:nth-child(3) {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.video-style {
+    width: 100%;
+    height: 100%;
+}
