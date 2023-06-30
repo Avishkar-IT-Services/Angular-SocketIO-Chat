@@ -96,7 +96,7 @@ similarly, you can send videos and images and also before sending you can previe
 
 
 Thanks,<br>
-Avishkar IT Services
+Avishkar IT Service
 
 
 
