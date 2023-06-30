@@ -87,11 +87,11 @@ while sending a message, you can see on the right window, some user is typing - 
 similarly, you can send videos and images and also before sending you can preview those
 
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/d35667b9-cfeb-4d25-a7c2-d4b1aea63e1d)
-
+<br>
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/fb6cd4e0-e29b-4421-8ed5-da008f76b412)
-
+<br>
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/d076506c-21a7-4810-975b-9d8d8dce5541)
-
+<br>
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/356b6304-15c7-4300-a179-c8e97ff68c5c)
 
 
