@@ -25,12 +25,12 @@ Open  the `.env` file and change the database url as per your database config, m
 
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/a3193daa-6250-42eb-9583-79d927c28b10)
 
-If you want to run the server in a different port, then you can change the port to `server.js` in the server and also you have to change in client also
+If you want to run the server in a different port, then you can change the port in the `server.js` file  and also you need to change url in client also
 
 ## Run the project 
 
 ### Server <br>
-Open the client side terminal and type ``` npm run start ```, it will automatically open the app in the browser.
+Open the client side terminal and type ``` npm run start ```, in order to start the server
 
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/f36fb214-7cf9-4693-b5fd-db6a06941fa4)
 
