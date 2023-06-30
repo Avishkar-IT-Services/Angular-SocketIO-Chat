@@ -51,6 +51,31 @@ step3 - signup success
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/422675cd-faad-4c60-bc10-206aeb5b186f)
 
 
+How to send messages
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/1387dd72-40ec-4e76-8b80-f3971cdab83e)
+
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/ea4a552e-d946-4835-a32b-1b56e029d738)
+
+Sending images and video
+
+Preview uploading images and video
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/d35667b9-cfeb-4d25-a7c2-d4b1aea63e1d)
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/fb6cd4e0-e29b-4421-8ed5-da008f76b412)
+
+
+Sending images
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/d076506c-21a7-4810-975b-9d8d8dce5541)
+
+Sending videos 
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/356b6304-15c7-4300-a179-c8e97ff68c5c)
+
+User typing
+![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/6a4df290-f2af-41d5-bba8-302737863aa1)
+
+
+
+
+
 
 
 
