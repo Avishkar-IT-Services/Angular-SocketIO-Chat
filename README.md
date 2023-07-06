@@ -1,4 +1,4 @@
- # Angular-SocketIO-Chat 🚀
+ # Angular-SocketIO-Chat 
 ![image](https://github.com/Avishkar-IT-Services/Angular-SocketIO-Chat/assets/137886016/e92dfe98-5bd0-48f3-beb6-3cfdc0850dd1)
 
 Angular chat app by using MEAN and socket.io.
